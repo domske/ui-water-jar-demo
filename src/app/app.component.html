@@ -1,0 +1,48 @@
+<header>
+  <div class="title">Water Jar</div>
+  <div class="spacer"></div>
+  <button class="button icon" (click)="toggleLightMode()">☀</button>
+  <a class="button info" href="https://www.npmjs.com/package/ui-water-jar">
+    Getting Started
+  </a>
+</header>
+
+<main>
+  <section>
+    <h4>Water Jar</h4>
+    <div class="container">
+      <div class="flex-column">
+        <app-water-jar-one [value]="value"></app-water-jar-one>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          style="width: 150px; margin-top: 20px"
+          [(ngModel)]="value"
+        />
+        <span class="hint-text">Drag me!</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h4>Battery</h4>
+    <div class="container">
+      <app-water-jar-two></app-water-jar-two>
+    </div>
+  </section>
+
+  <section>
+    <h4>More Examples Planned</h4>
+    <div class="container info-text">
+      <a href="https://github.com/domske/ui-water-jar-demo/"> Source Code </a>
+      of this demo page.<br />
+      Feel free to add more examples.
+    </div>
+  </section>
+</main>
+
+<footer>
+  © Copyright 2020 Dominik Geng <br />
+  <a href="https://github.com/domske">@domske</a>
+</footer>

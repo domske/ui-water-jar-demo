@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="battery">
+    <ui-water-jar
+      [value]="value"
+      [color]="getColor()"
+      shape="rect"
+    ></ui-water-jar>
+  </div>
+  <div class="value">
+    {{ getValue() | number: "1.0-0" }}
+  </div>
+</div>
